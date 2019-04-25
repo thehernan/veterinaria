@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/11/2018, 12:13:58 AM
+    Author     : HERNAN
+*/
+
+/*.navbar-default {
+    background-color: #1CCEE8;
+    
+}*/
+
+body{
+        background-image: url('../img/fondo4.jpg') ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height:100%;
+
+    }
+

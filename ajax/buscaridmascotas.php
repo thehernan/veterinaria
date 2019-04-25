@@ -1,0 +1,15 @@
+ <?php 
+$cod=$_POST['id'];
+require_once ("../config/db.php");
+require_once ("../config/conexion.php");
+
+//$sql="SELECT * FROM mascota where id_mascota='".$cod."'";
+$sql="SELECT * FROM mascota m inner join cliente c on c.id_cliente=m.id_cliente where id_mascota ='".$cod."'";
+$execute=mysqli_query($conexion,$sql);
+$result = mysqli_fetch_assoc($execute);
+$data=NULL;
+if($result){
+    $data = mysqli_fetch_assoc($execute);
+}
+echo json_encode($result);
+?>

@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/01/2019, 03:07:30 PM
+    Author     : HERNAN
+*/
+
+
+/*ol.ui-autocomplete-input {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul.ui-autocomplete-input {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li.ui-autocomplete-input {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li.ui-autocomplete-input {
+  background: #cce5ff;
+  margin: 5px;
+}*/
+
+
+/*div {
+  width: 200px;
+}
+ 
+h2 {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}*/
+ 
+ ul.ui-autocomplete {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow: auto;
+  z-index: 9999;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.4);
+}
+ 
+ li.ui-menu-item {
+  font: 200 12px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+/*   overflow: hidden;*/
+}
+ 
+li:last-child.ui-menu-item{
+  border: none;
+}
+ 
+li.ui-menu-item {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: auto;
+  cursor:pointer;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+li:hover.ui-menu-item {
+  font-size: 20px;
+  background: #f6f6f6;
+}
+
