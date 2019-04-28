@@ -102,9 +102,7 @@ class documentodao{
         
     }
 
-    public function select() {
         
-    }
 
     public function selectid($id) {
         

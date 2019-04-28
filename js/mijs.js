@@ -61,15 +61,14 @@ $( "#guardacliente" ).submit(function( event ) {
   event.preventDefault();
 });
 
-/////////////////////////////// proveedor //////////////////
-
-$( "#guardaproveedor" ).submit(function( event ) {
+////////////////// buscar comprobantes compra /////////}
+$( "#guardacliente" ).submit(function( event ) {
   $('#btngrabar').attr("disabled", true);
 
  var parametros = $(this).serialize();
 	 $.ajax({
 			type: "POST",
-			url: "ajax/nuevo_proveedor.php",
+			url: "ajax/nuevo_cliente.php",
 			data: parametros,
 			 beforeSend: function(objeto){
 				$("#resultados_ajaxnu").html("Mensaje: Cargando...");
@@ -78,11 +77,40 @@ $( "#guardaproveedor" ).submit(function( event ) {
 			$("#resultados_ajaxnu").html(datos);
 			$('#btngrabar').attr("disabled", false);
 
-			$('#guardaproveedor').trigger("reset");
+			$('#guardacliente').trigger("reset");
 		  }
 	});
   event.preventDefault();
 });
+
+/////////////////////////////// Buscar compras  //////////////////
+$( "#FormularioAjaxCompras" ).submit(function( event ) {
+
+ var parametros = $(this).serialize();
+	 $.ajax({
+			type: "POST",
+			url: "ajax/ver_comprobantes_compra.php",
+			data: parametros,
+			 beforeSend: function(objeto){
+				$("#respuestaAjax").html("Mensaje: Cargando...");
+			  },
+			success: function(datos){
+			$("#respuestaAjax").html(datos);
+ 
+		  }
+	});
+  event.preventDefault();
+});
+
+//////////////// print compra ///////
+function printcompra(id){
+    
+//    VentanaCentrada('ticketcompra.php?iddoc='+id);
+    VentanaCentrada('ticketcompra.php?iddoc='+id);
+    
+    
+}
+
 
 /////////////////// mostrar proveedor en modal /////////////////////////////
 $('#editproveedor').on('show.bs.modal', function (event) {

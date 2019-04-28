@@ -23,6 +23,12 @@ class compracontroller {
         return $this->dao->insertar($cabecera,$detalle);
          
     }
+    
+    function select ($desde,$hasta,$tipocomp,$buscar,$serie,$numero) {
+        return $this->dao->select($desde, $hasta, $tipocomp, $buscar, $serie, $numero);
+        
+        
+    }
   
     
     

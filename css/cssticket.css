@@ -54,6 +54,8 @@ th.precio {
 .ticket {
   width: 273px;
   max-width: 273px;
+  margin-left: auto;
+  margin-right:auto;
 }
  
 img {

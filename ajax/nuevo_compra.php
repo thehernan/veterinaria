@@ -50,12 +50,15 @@ date_default_timezone_set('America/Lima');
          $serie =$_POST['txtserie'];
          $numero = $_POST['txtnumero'];
          $fecha = $_POST['txtfechac'];
+         $comprobante = $_POST['cbtipocomprobante'];
         
          
         $documento->setSerie($serie);
         $documento->setNumero($numero);
         $documento->setFecha($fecha);
         $documento->setIdproveedor($idcliente);
+        $documento->setComprobante($comprobante);
+        
 //        $documento->setIdoctor($iddoc);
      
         

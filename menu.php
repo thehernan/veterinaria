@@ -125,6 +125,9 @@ echo '<meta http-equiv="refresh" content="0;URL=index.php" />';
                         <a href="#"><i class="fa fa-barcode"></i>Compras<span class="fa arrow"></span></a>
                            <ul class="nav nav-second-level">
                             <li>
+                                <a href="ver_comprobantes_compras.php"><i class="glyphicon glyphicon-tag" aria-hidden="true"></i>Ver Comprobantes <label class="text-danger"> [NEW]</label></a>
+                            </li>
+                            <li>
                                 <a href="nuevacompra.php"><i class="glyphicon glyphicon-tag" aria-hidden="true"></i>Nueva Compra</a>
                             </li>
                             <li>
